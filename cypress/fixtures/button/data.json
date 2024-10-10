@@ -1,0 +1,19 @@
+{
+  "variants": [
+    "default",
+    "destructive",
+    "outline",
+    "secondary",
+    "ghost",
+    "link"
+  ],
+  "sizes": ["default", "sm", "lg"],
+  "labels": {
+    "default": "Default Button",
+    "variant": "Variant Button",
+    "size": "Size Button",
+    "disabled": "Disabled Button",
+    "custom": "Custom Button"
+  },
+  "types": ["button", "submit", "reset"]
+}

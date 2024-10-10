@@ -1,0 +1,96 @@
+{
+  "name": "horizon",
+  "private": false,
+  "version": "0.0.1",
+  "main": "./dist/horizon.umd.js",
+  "module": "./dist/horizon.es.js",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "import": "./dist/horizon.es.js",
+      "require": "./dist/horizon.umd.js",
+      "types": "./dist/main.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "cypress run --component"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.447.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-day-picker": "^8.10.1",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.9.0",
+    "@cypress/react18": "^2.0.1",
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "@eslint/js": "^9.9.0",
+    "@storybook/addon-essentials": "^8.3.4",
+    "@storybook/addon-interactions": "^8.3.4",
+    "@storybook/addon-links": "^8.3.4",
+    "@storybook/addon-onboarding": "^8.3.4",
+    "@storybook/addon-styling": "^2.0.0",
+    "@storybook/blocks": "^8.3.4",
+    "@storybook/react": "^8.3.4",
+    "@storybook/react-vite": "^8.3.4",
+    "@storybook/test": "^8.3.4",
+    "@types/cypress": "^0.1.6",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/tailwindcss": "^3.0.11",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "css-loader": "^7.1.2",
+    "cypress": "^13.15.0",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "eslint-plugin-storybook": "^0.9.0",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.47",
+    "postcss-loader": "^8.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.3.4",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.13",
+    "tailwindcss-animate": "^1.0.7",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.3",
+    "vite-plugin-lib-inject-css": "^2.1.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ]
+}
